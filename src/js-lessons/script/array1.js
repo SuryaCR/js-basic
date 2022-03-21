@@ -155,3 +155,13 @@ function value1(item) {
 }
 const newArray = orderTotals.map(value1);
 console.log(newArray);
+
+function tallyNumebrs(prvNumber,currentNumber){
+  console.log(`the total so far is ${prvNumber}`)
+  console.log(`the current number is ${currentNumber}`)
+  console.log('--------------')
+  //return the current tally PLUS the amount of thus order
+  return prvNumber+currentNumber
+}
+const allOrders=orderTotals.reduce(tallyNumebrs,0)
+console.log('allOrders: '+allOrders)
