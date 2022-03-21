@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+    <script src="script/demo.js?v=1"></script>
+  </head>
+  <body>
+    <p>
+      <label for="first">X:</label>
+      <input type="text" placeholder="Enter a Number" id="first" />
+    </p>
+    <p>
+      <label for="second">Y:</label>
+      <input type="text" placeholder="Enter a Number" id="second" />
+    </p>
+    <p>
+      <input type="button" value="Ok" onclick="add()" />
+    </p>
+    <p>
+      <input type="button" value="Sum" onclick="sum()" />
+    </p>
+    <p>
+      <input type="button" value="Sum Again" onclick="add(100,50)" />
+    </p>
+    <p>
+      <input
+        type="button"
+        value="Sum Again Parameter"
+        onclick="add(document.getElementById('first').value,document.getElementById('second').value)"
+      />
+    </p>
+    <p>
+      <input type="button" value="Problem1" onclick="problem1()" />
+      <input type="button" value="Problem2" onclick="problem2()" />
+      <input type="button" value="Problem3" onclick="problem3()" />
+      <input
+        type="button"
+        value="printdigits"
+        onclick="printdigits(document.getElementById('first').value)"
+      />
+    </p>
+    <div id="result"></div>
+  </body>
+</html>
