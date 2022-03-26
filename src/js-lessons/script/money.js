@@ -1,3 +1,10 @@
-export function convertmoney(x){
-    return x*23;
-}
+export function generateOptions(options) {
+    return Object.entries(options)
+      .map(
+        ([currencyCode, currencyName]) =>
+          `<option value="${currencyCode}">${
+            currencyCode == "MSG" ? " " : currencyCode
+          } ${currencyName}</option>`
+      )
+      .join("");
+  }

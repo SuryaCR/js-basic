@@ -1,4 +1,5 @@
 import { math } from "./handlers.js";
+import { generateOptions } from "./money.js";
 const currencies = {
   MSG: "Select a Country",
   USD: "United States Dollar",
@@ -41,17 +42,6 @@ const to = document.querySelector("[name = to-country]");
 const country = generateOptions(currencies);
 from.innerHTML = country;
 to.innerHTML = country;
-
-function generateOptions(options) {
-  return Object.entries(options)
-    .map(
-      ([currencyCode, currencyName]) =>
-        `<option value="${currencyCode}">${
-          currencyCode == "MSG" ? " " : currencyCode
-        } ${currencyName}</option>`
-    )
-    .join("");
-}
 
 document.getElementById("amount1").addEventListener("change", changeValue);
 function changeValue() {
