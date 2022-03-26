@@ -1,4 +1,4 @@
-import { math } from "./handlers.js"
+import { math } from "./handlers";
 const currencies = {
   MSG: "Select a Country",
   USD: "United States Dollar",
@@ -37,8 +37,6 @@ const currencies = {
 
 const from = document.querySelector("[name = from-country]");
 const to = document.querySelector("[name = to-country]");
-// const input = document.querySelector("#amount1");
-// const input2 = documnet.querySelector("#amount2");
 
 const country = generateOptions(currencies);
 from.innerHTML = country;
@@ -55,10 +53,7 @@ function generateOptions(options) {
     .join("");
 }
 
-const input = document.getElementById('amount1');
-const output = document.getElementById('amount2')
- input.addEventListener('change', callMath);
-
- function callMath() {
-    math();
- }
+document.getElementById("amount1").addEventListener("change", changeValue);
+function changeValue() {
+  math();
+}
