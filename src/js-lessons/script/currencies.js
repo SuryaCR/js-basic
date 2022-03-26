@@ -1,4 +1,4 @@
-import { math } from "./handlers";
+import { math } from "./handlers.js";
 const currencies = {
   MSG: "Select a Country",
   USD: "United States Dollar",
