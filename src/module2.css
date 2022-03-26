@@ -1,0 +1,42 @@
+* {
+  margin-top: 20px;
+  text-align: center;
+}
+body {
+  font-size: 19px;
+}
+table,
+th,
+td {
+  border: 5px solid white;
+  background-color: yellow;
+  text-align: center;
+  height: 100px;
+  width: 50%;
+}
+td,
+th {
+  background-color: yellow;
+}
+.contianer {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+input {
+  background-color: yellow;
+  border: transparent;
+  height: 50%;
+  width: 50%;
+  font-size: 19px;
+}
+select {
+  background-color: yellow;
+  border: transparent;
+  height: 50%;
+  width: 75%;
+  font-size: 19px;
+}
+option {
+  background-color: white;
+}

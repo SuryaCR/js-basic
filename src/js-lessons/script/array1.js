@@ -144,7 +144,7 @@ toppings.forEach(displayTopping);
 toppings.map(displayTopping);
 
 function addArms(face) {
-  return `🥳${face}🥳`;
+  return `🐶${face}🐶`;
 }
 const toys = faces.map(addArms);
 console.log(toys);
