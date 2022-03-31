@@ -1,5 +1,5 @@
-var n = 1;
-var x = 0;
+export var n = 1;
+export var x = 0;
 
 export function tableDisplay() {
     var AddRown = document.getElementById("table");
