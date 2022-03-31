@@ -38,10 +38,19 @@
           <div>
             <label>Test Result:</label>
             <label>Positive:</label
-            ><input type="checkbox" id="result" value="Positive" />
+            ><input
+              type="radio"
+              id="result"
+              value="Positive"
+              name="testresult"
+            />
             <span
               ><label>Negative:</label
-              ><input type="checkbox" id="result" value="Negative"
+              ><input
+                type="radio"
+                id="result"
+                value="Negative"
+                name="testresult"
             /></span>
           </div>
           <div>
@@ -54,16 +63,18 @@
           <div>
             <label>Select Gender:</label>
             <label>Male:</label>
-            <input type="checkbox" id="gender" checked />
-            <label>Female:</label><input type="checkbox" id="gender" />
-            <label>Others:</label><input type="checkbox" id="gender" />
+            <input type="radio" id="gender" name="gender" value="Male" />
+            <label>Female:</label
+            ><input type="radio" id="gender" name="gender" value="Female" />
+            <label>Others:</label
+            ><input type="radio" id="gender" name="gender" value="Others" />
           </div>
           <div>
             <input type="button" id="button" value="Submit" />
           </div>
         </form>
       </section>
-      <section id="second-container">
+      <section id="second-container" class="container">
         <table id="table">
           <thead>
             <th>Name</th>
@@ -74,17 +85,18 @@
             <th>Date Of Test</th>
             <th>Lab Name</th>
             <th>Report No</th>
-            <!-- <th>Test Result</th> -->
+            <th>Test Result</th>
+            <th>Gender</th>
           </thead>
         </table>
       </section>
-      <section id="third-container">
+      <section id="third-container" class="container">
         <div>
           <input type="text" id="search" />
           <input type="button" id="button1" value="Search By Aadhar Number" />
         </div>
       </section>
-      <section id="fourth-container">
+      <section id="fourth-container" class="container">
         <table id="table1">
           <thead>
             <th>Name</th>
@@ -95,7 +107,8 @@
             <th>Date Of Test</th>
             <th>Lab Name</th>
             <th>Report No</th>
-            <!-- <th>Test Result</th> -->
+            <th>Test Result</th>
+            <th>Gender</th>
           </thead>
         </table>
       </section>
