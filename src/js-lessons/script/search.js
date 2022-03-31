@@ -3,10 +3,9 @@ var x = 0;
 
 export function addRow() {
     var result = document.getElementById("search").value;
-    var indexValue = 0;
     for (var index = 0; index < aadhar.length; index++) {
       if (result === aadhar[index]) {
-        indexValue = index;
+       var indexValue = index;
       }
     }
     var AddRown = document.getElementById("table1");
