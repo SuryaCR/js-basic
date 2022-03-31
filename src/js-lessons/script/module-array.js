@@ -1,4 +1,4 @@
-import { addRow } from "./search.js";
+import { addRow, n, x} from "./search.js";
 import { tableDisplay } from "./table-display.js";
 var names = [];
 var aadhar = [];
