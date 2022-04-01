@@ -7,6 +7,9 @@ export function addRow() {
     if (result === aadhar[index]) {
       var indexValue = index;
     }
+    else{
+      alert('There are No Records');
+    }
   }
   var AddRown = document.getElementById("table1");
   var NewRow = AddRown.insertRow(n1);
